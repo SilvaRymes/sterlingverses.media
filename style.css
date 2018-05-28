@@ -49,49 +49,53 @@ html, body {
 
 #logo {
 	text-align: justify;
-	background-color: none;
+	margin: 0 0;
+	background-color: red;
 }
 
 #logo > div {
-	width: 93.75%;
+	width: 100%;
 	display: inline-block;
 	vertical-align: top;
 	float: left;
 	zoom: 1;
-	margin: 0 3.125%;
+	margin-bottom: 1%;
 	background-color: none;
 }
 
-#logo:after {
+/*#logo:after {
 	content: "";
 	width: 100%;
 	display: inline-block;
-}
+}*/
 
 #buttons {
 	text-align: justify;
+	margin: 4.545455%;
+	margin: 0 calc(((1100 - (150 *7)) /1100) *100% /2); /* ((([Logo Width] - ([Icon Width] *[# of Icons])) /[Logo Width]) *100% /[# of Sides])  */
 }
 
 #buttons > div {
 	/*height: 100px;
 	/*width: 160px;*/
 	width: 14.285714%;
-	width: calc(100%  /7); /* Declare your value. Can be in relative units. */
+	width: calc(100% /7); /* Declare your value. Can be in relative units. */
 	display: inline-block;
 	vertical-align: top;
 	float: left;
+	margin: 0 0;
+	filter: grayscale(100%);
 	/* IE fix. */
 	/*display: inline;*/
 	zoom: 1;
 	background-color: none;
-	filter: grayscale(100%);
 }
 
-#buttons:after {
+/*#buttons:after {
 	content: "";
 	width: 100%;
 	display: inline-block;
-}
+}*/
 
 #buttons > div:hover {
 	cursor: pointer;
