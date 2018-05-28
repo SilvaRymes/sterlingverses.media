@@ -53,13 +53,12 @@ html, body {
 }
 
 #logo > div {
-	width: 94.396041%;
+	width: 93.75%;
 	display: inline-block;
 	vertical-align: top;
 	float: left;
 	zoom: 1;
-	margin: 0 2.8019795%;
-
+	margin: 0 3.125%;
 	background-color: none;
 }
 
@@ -81,7 +80,6 @@ html, body {
 	display: inline-block;
 	vertical-align: top;
 	float: left;
-
 	/* IE fix. */
 	/*display: inline;*/
 	zoom: 1;
