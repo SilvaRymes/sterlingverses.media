@@ -31,3 +31,71 @@ html, body {
     
     background-position:0 0, 2px 0, 2px -2px, 0px 2px;
 }
+
+.content {
+	position: absolute;
+	width: 75%;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+	display: table;
+    table-layout: fixed;
+	/* background-color: rgba(0,0,0,0.0); */
+	background-color: none;
+}
+
+#logo {
+	text-align: justify;
+	background-color: none;
+}
+
+#logo > div {
+	width: 94.396041%;
+	display: inline-block;
+	vertical-align: top;
+	float: left;
+	zoom: 1;
+	margin: 0 2.8019795%;
+
+	background-color: none;
+}
+
+#logo:after {
+	content: "";
+	width: 100%;
+	display: inline-block;
+}
+
+#buttons {
+	text-align: justify;
+}
+
+#buttons > div {
+	/*height: 100px;
+	/*width: 160px;*/
+	width: 14.285714%;
+	width: calc(100%  /7); /* Declare your value. Can be in relative units. */
+	display: inline-block;
+	vertical-align: top;
+	float: left;
+
+	/* IE fix. */
+	/*display: inline;*/
+	zoom: 1;
+	background-color: none;
+	filter: grayscale(100%);
+}
+
+#buttons:after {
+	content: "";
+	width: 100%;
+	display: inline-block;
+}
+
+#buttons > div:hover {
+	cursor: pointer;
+	filter: grayscale(0%);
+}
