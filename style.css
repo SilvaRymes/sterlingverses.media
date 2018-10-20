@@ -91,6 +91,28 @@ html, body {
 	background-color: none;
 }
 
+@supports (-ms-ime-align:auto) {
+	#buttons {
+		margin: 4.55%;
+	}
+}
+
+@supports (-ms-ime-align:auto) {
+	#buttons > div {
+		width: 14.28%;
+	}
+}
+
+_:-ms-fullscreen, :root #buttons {
+		margin: 4.55%;
+	}
+}
+
+_:-ms-fullscreen, :root #buttons > div {
+		width: 14.28%;
+	}
+}
+
 /*#buttons:after {
 	content: "";
 	width: 100%;
