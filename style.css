@@ -84,11 +84,18 @@ html, body {
 	vertical-align: top;
 	float: left;
 	margin: 0 0;
-	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 	/* IE fix. */
 	/*display: inline;*/
 	zoom: 1;
 	background-color: none;
+}
+
+#buttons > div:hover {
+	cursor: pointer;
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
 }
 
 @supports (-ms-ime-align:auto) {
@@ -118,8 +125,3 @@ _:-ms-fullscreen, :root #buttons > div {
 	width: 100%;
 	display: inline-block;
 }*/
-
-#buttons > div:hover {
-	cursor: pointer;
-	filter: grayscale(0%);
-}
